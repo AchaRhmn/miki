@@ -35,7 +35,6 @@ function mouseUp() {
 }
 
 card.addEventListener('click', function () {
-    console.log("Card clicked");
     if (dragged) return;
 
     isMiki1 = !isMiki1;
@@ -43,3 +42,12 @@ card.addEventListener('click', function () {
         ? 'url("miki1.png")'
         : 'url("miki2.png")';
 });
+
+window.addEventListener('click', () => {
+    const audio = document.getElementById('bgm-audio');
+    audio.muted = false;
+    audio.play().catch(e => {
+        console.log('Playback failed:', e);
+    });
+}, { once: true });
+
