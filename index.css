@@ -1,0 +1,39 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #container {
+    position: relative;
+    background-size: 4em 4em;
+    height: 100vh;
+    overflow: hidden;
+    margin: none;
+    padding: none;
+}
+
+  
+  #card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background-image: url("miki1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+    pointer-events: auto;
+    transition: 0.2s;
+  }
+
+  .pointer{
+    position: absolute;
+    pointer-events: none;
+    transition: 0.2s;
+  }
